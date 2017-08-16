@@ -21,7 +21,7 @@
     Requests requests = new Requests();
     requests.data = "data";
     String response = requests.get(url).text;
-    // String response = requests.post("http://huangty.com").text;
+    // String response = requests.post(url).text;
     System.out.println(response);
 
 ```
@@ -30,8 +30,8 @@
 ```java
     String url = "http://huangty.com";
     Requests requests = new Requests();
-    requests.data = "data";
+    requests.addHeader("Content-Type", "application/json;charset=utf-8");
     String response = requests.get(url).text;
-    // String response = requests.post("http://huangty.com").text;
+    // String response = requests.post(url).text;
     System.out.println(response);
 ```
