@@ -56,7 +56,6 @@ public class Test {
 		
 		headers.add(header);
 		requestss.headers = headers;
-		String head = "{'a': 'b', 'c': 'd'}";
 		System.out.println(requestss.post(url).text);
 	}
 }
