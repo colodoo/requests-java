@@ -31,7 +31,7 @@ public class Requests extends RequestMethod {
 	 * @throws IOException
 	 */
 	public Requests() throws MalformedURLException, IOException {
-		this.request = new URL(this.url).openConnection();
+//		this.request = new URL(this.url).openConnection();
 	}
 	
 	////////////////////

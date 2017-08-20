@@ -1,6 +1,8 @@
 package com.huangty.http.bean;
 
 import java.net.URLConnection;
+import java.util.List;
+import java.util.Map;
 
 public class Request {
 	
@@ -21,5 +23,8 @@ public class Request {
 			
 	// 发送的数据
 	public String data = null;
+	
+	// 头部
+	public List<Map<String, String>> headers = null;
 
 }
